@@ -21,5 +21,12 @@
             android:id="@+id/web"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Веб" />
+
+        <item
+            android:id="@+id/internet"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Интернет"
+            tools:layout="@layout/internet_time"/>
+
     </group>
 </menu>
