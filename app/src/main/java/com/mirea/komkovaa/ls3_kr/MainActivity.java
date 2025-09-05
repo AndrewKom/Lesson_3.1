@@ -1,6 +1,9 @@
 package com.mirea.komkovaa.ls3_kr;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.view.Menu;
 
@@ -30,11 +33,15 @@ public class MainActivity extends AppCompatActivity {
 
         setSupportActionBar(binding.appBarMain.toolbar);
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
+
+            Intent myFileIntent;
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null)
-                        .setAnchorView(R.id.fab).show();
+                String path = Environment.getExternalStorageDirectory() + "/"  ;
+                Uri uri = Uri.parse(path);
+                myFileIntent = new Intent(Intent.ACTION_GET_CONTENT);
+                myFileIntent.setDataAndType(uri,"*/*");
+                startActivityForResult(myFileIntent,10);
             }
         });
         DrawerLayout drawer = binding.drawerLayout;
@@ -42,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,R.id.web,R.id.internet)
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,R.id.web,R.id.internet,R.id.accelerometer,R.id.camera,R.id.audio)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);

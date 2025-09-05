@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "744942470233",
+    "project_id": "ls3krmirea",
+    "storage_bucket": "ls3krmirea.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744942470233:android:30c9afe5d728a8384ddd48",
+        "android_client_info": {
+          "package_name": "com.mirea.komkovaa.ls3_kr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2kkjS3yXNruerfjhAM2knKHZazHk7aRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

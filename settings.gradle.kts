@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Ls3_kr"
 include(":app")
- 
+include(":ls2")

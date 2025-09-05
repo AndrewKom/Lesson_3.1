@@ -33,4 +33,19 @@
         android:name="com.mirea.komkovaa.ls3_kr.internet"
         android:label="internet"
         tools:layout="@layout/internet_time" />
+    <fragment
+        android:id="@+id/accelerometer"
+        android:name="com.mirea.komkovaa.ls3_kr.accelerometer"
+        android:label="fragment_accelerometer"
+        tools:layout="@layout/fragment_accelerometer" />
+    <fragment
+        android:id="@+id/camera"
+        android:name="com.mirea.komkovaa.ls3_kr.camera"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/audio"
+        android:name="com.mirea.komkovaa.ls3_kr.audio"
+        android:label="fragment_audio"
+        tools:layout="@layout/fragment_audio" />
 </navigation>

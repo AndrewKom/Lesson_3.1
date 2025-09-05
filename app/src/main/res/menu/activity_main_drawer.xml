@@ -15,7 +15,7 @@
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="Боковое меню" />
 
         <item
             android:id="@+id/web"
@@ -27,6 +27,25 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Интернет"
             tools:layout="@layout/internet_time"/>
+
+        <item
+            android:id="@+id/accelerometer"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Аccelerometer"
+            tools:layout="@layout/fragment_accelerometer"/>
+
+
+        <item
+            android:id="@+id/camera"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Camera"
+            tools:layout="@layout/fragment_camera"/>
+
+        <item
+            android:id="@+id/audio"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="audio"
+            tools:layout="@layout/fragment_audio"/>
 
     </group>
 </menu>
